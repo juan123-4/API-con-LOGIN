@@ -6,6 +6,7 @@ function generateToken(user) {
 }
 
 function verifyToken(req, res, next) {
+  console.log("si estoy pasando")
   const token = req.session.token;
 
   if (!token) {
